@@ -4,8 +4,6 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
         return hasilValidasi
     })
 
-    // return validasi
-
     if(typeof nilaiAwal === "number" && typeof nilaiAkhir === "number" && validasi === true){
         const dataBaru = dataArray.filter((e)=>{
             return e>=nilaiAwal && e<=nilaiAkhir
@@ -20,17 +18,14 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
         else if(dataBaru.length === 0){
             return "Nilai tidak ditemukan"
         }
+
+        return dataBaru.sort((a,b)=>{
+            return a-b
+        })
     }
     else{
         return "Input nilai Awal, nilai Akhir dan data Array harus bertipe number"
     }
-       
-       
-   
-    return dataBaru.sort((a,b)=>{
-        return a-b
-    })
-
 
 }
 

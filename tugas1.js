@@ -9,7 +9,7 @@ console.log(hobby)
 const fruits = ["apple", "orange", "cherry"];
 const fruit = fruits.toString();
 console.log(fruit)
-//3. every = Mengembalikan nilai true jika setiap elemen dalam array ini memenuhi kondisi tertentu
+//3. every = Mengembalikan nilai true jika setiap semua elemen dalam array ini memenuhi kondisi tertentu
 const angka = [32, 33, 16, 40];
 
 const angkas = angka.every((cekAngka)=>{
@@ -25,7 +25,7 @@ const result = umurs.filter((checkUmur)=>{
 });
 
 console.log(result)
-//5. include = mengembalikan nilai trus jika array sesuai dengan kondisi suatu fungsi
+//5. include = mengembalikan nilai true jika array sesuai dengan kondisi suatu fungsi
 const buah = ["Banana", "Orange", "Apple", "Mango"];
 let text = buah.includes("Banana");
 console.log(text)

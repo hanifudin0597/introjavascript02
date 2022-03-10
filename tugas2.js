@@ -21,6 +21,6 @@ const names = [
         return cetak
     }
 
-    const output = searchName("a",4,callback)
+    const output = searchName("a",9,callback)
     console.log(output)
 
