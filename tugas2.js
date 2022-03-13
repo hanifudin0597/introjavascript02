@@ -7,7 +7,7 @@ const names = [
 
     const searchName = (word, limit, callback) => {
         const find = names.filter(element => {
-           const hasil = element.toLowerCase().includes(word)
+           const hasil = element.toLowerCase().includes(word.toLowerCase())
            return hasil
         })
         let final = find.slice(0,limit)
@@ -18,9 +18,16 @@ const names = [
 
     const callback = (final) => {
         const cetak = final
-        return cetak
+        if(cetak.length === 0){
+            return "Data tidak ditemukan"
+        }
+        else{
+            return cetak
+        }
+        
     }
 
-    const output = searchName("a",9,callback)
+    const output = searchName("1",3,callback)
     console.log(output)
+    // searchName("an",3,callback)
 
